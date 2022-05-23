@@ -9,29 +9,24 @@ header {
   .logo {
     margin: 0 auto;
     width: fit-content;
-    img {
-      display: flex;
-    }
   }
 
   .social-medias {
     ul {
       display: flex;
       justify-content: flex-end;
-      margin-bottom: 3px;
+      margin-bottom: 7px;
       li {
-        // background: #fff;
+        position: relative;
+        top: 4px;
         margin-right: 15px;
+        display: flex;
+        max-height: fit-content;
         filter: brightness(0) invert(1) opacity(0.75);
         cursor: pointer;
 
         &:hover {
           filter: none;
-        }
-
-        img {
-          width: 100%;
-          //   background: red;
         }
       }
     }
@@ -39,6 +34,6 @@ header {
 
   .blue-line {
     background: linear-gradient(90deg, transparent, #00c2ff);
-    height: 3px;
+    height: 2px;
   }
 }

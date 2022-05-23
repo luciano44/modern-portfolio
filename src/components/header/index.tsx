@@ -9,18 +9,26 @@ function Header() {
   return (
     <header>
       <div className="logo">
-        <img src={logo} alt="logo" />
+        <a href="/">
+          <img src={logo} alt="logo" />
+        </a>
       </div>
       <div className="social-medias">
         <ul>
           <li>
-            <img src={git} alt="git" />
+            <a href="#">
+              <img src={git} alt="git" />
+            </a>
           </li>
           <li>
-            <img src={linkedin} alt="linkedin" />
+            <a href="#">
+              <img src={linkedin} alt="linkedin" />
+            </a>
           </li>
           <li>
-            <img src={twitter} alt="twitter" />
+            <a href="#">
+              <img src={twitter} alt="twitter" />
+            </a>
           </li>
         </ul>
         <div className="blue-line"></div>
