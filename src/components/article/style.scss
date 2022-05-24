@@ -1,3 +1,79 @@
 article {
   display: flex;
+
+  .description {
+    font-size: 24px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 25px;
+    position: relative;
+    margin-left: 15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -15px;
+      height: 100%;
+      width: 4px;
+      background: #00c2ff;
+      box-shadow: 0 0 10px #00c2ff;
+    }
+  }
+
+  .projects {
+    flex: 3 1;
+    margin-right: 15px;
+  }
+
+  .knowledges {
+    // border: 1px solid red;
+    flex: 1 1;
+
+    ul {
+      background: rgba(255, 255, 255, 0.04);
+      padding: 20px;
+
+      li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 10px;
+        }
+
+        span {
+          font-weight: lighter;
+          color: rgba(255, 255, 255, 0.45);
+        }
+
+        &:nth-last-child(1) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .curriculum {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    width: 200px;
+    height: 50px;
+    position: relative;
+
+    span {
+      margin: 0 25px 0 5px;
+    }
+
+    svg {
+      filter: opacity(0.5);
+    }
+
+    a:hover svg {
+      filter: opacity(1);
+    }
+  }
 }

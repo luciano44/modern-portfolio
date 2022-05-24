@@ -9,6 +9,10 @@ header {
   .logo {
     margin: 0 auto;
     width: fit-content;
+
+    &:hover {
+      filter: drop-shadow(0 0 15px 1px #00c2ff);
+    }
   }
 
   .social-medias {
@@ -26,14 +30,16 @@ header {
         cursor: pointer;
 
         &:hover {
-          filter: none;
+          filter: brightness(0) invert(1);
         }
       }
     }
   }
 
   .blue-line {
-    background: linear-gradient(90deg, transparent, #00c2ff);
+    background: #7de1ff;
+    box-shadow: 0 0 15px 1px #00c2ff;
+
     height: 2px;
   }
 }

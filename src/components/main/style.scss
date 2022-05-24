@@ -7,6 +7,7 @@
 
 body {
   background: #030727;
+  overflow-x: hidden;
   color: #f1f1f1;
 }
 
@@ -23,4 +24,32 @@ a {
   margin: 0 auto;
   max-width: 1000px;
   padding: 15px;
+}
+
+.lights {
+  // height: 100vh;
+  // width: 100vw;
+  margin: 0 auto;
+  left: 50%;
+  right: 50%;
+  top: -500px;
+  position: absolute;
+  z-index: -999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 25s linear infinite;
+  // background: gray;
+
+  img {
+    min-height: 1500px;
+    min-width: 1500px;
+    // background: red;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }

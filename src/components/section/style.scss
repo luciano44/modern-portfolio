@@ -1,5 +1,5 @@
 section {
-  height: 234px;
+  min-height: 234px;
   width: 100%;
   // border: 1px dotted red;
   margin: 100px 0;
@@ -20,20 +20,19 @@ section {
     }
 
     .name {
-      color: pink;
       font-size: 1.2rem;
       font-weight: bold;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.75);
     }
 
     .blue-line {
-      background: linear-gradient(90deg, #00c2ff, transparent);
+      background: #7de1ff;
+      box-shadow: 0 0 15px 1px #00c2ff;
       height: 2px;
     }
   }
 
   h1 {
-    // border: 1px dotted red;
     margin: 20px 0;
     text-align: center;
     font-size: 40px;
@@ -41,11 +40,11 @@ section {
     color: hsla(0, 0%, 100%, 0.9);
     span {
       color: #00c2ff;
+      text-shadow: 0 0 10px hsla(194, 100%, 50%, 0.5);
     }
   }
 
   p {
-    // border: 1px dotted red;
     color: hsla(0, 0%, 100%, 0.6);
     font-weight: lighter;
     text-align: center;

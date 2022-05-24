@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import "./style.scss";
 
 type Props = {
@@ -6,7 +6,11 @@ type Props = {
 };
 
 function Main(props: Props) {
-  return <div className="main">{props.children}</div>;
+  return (
+    <>
+      <div className="main">{props.children}</div>
+    </>
+  );
 }
 
 export default Main;
