@@ -9,9 +9,10 @@ header {
   .logo {
     margin: 0 auto;
     width: fit-content;
+    transition: 0.1s;
 
     &:hover {
-      filter: drop-shadow(0 0 15px 1px #00c2ff);
+      filter: drop-shadow(0 0 15px hsla(194, 100%, 50%, 0.5));
     }
   }
 
@@ -30,7 +31,8 @@ header {
         cursor: pointer;
 
         &:hover {
-          filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1)
+            drop-shadow(0 0 5px hsla(194, 100%, 50%, 1));
         }
       }
     }
