@@ -45,42 +45,42 @@ function Article() {
             logo={clock}
             title="Relógio Analógico"
             about="Chat com cadastro e perfil de usuários"
-            githubLink="https://github.com/luciano44/LChat"
+            githubLink="https://github.com/luciano44/Analog-Clock"
           />
           <Project
             projectLink="https://luciano44.github.io/PET-photos/"
             logo={paw}
             title="Imagens de Animais"
             about="Chat com cadastro e perfil de usuários lorem ipsum dolor siamet and i don't remember what's written in the rest of the lorem text"
-            githubLink="https://github.com/luciano44/LChat"
+            githubLink="https://github.com/luciano44/PET-photos"
           />
           <Project
             projectLink="https://luciano44.github.io/drawing-app/"
             logo={pencil}
             title="App de Desenho"
             about="Chat com cadastro e perfil de usuários"
-            githubLink="https://github.com/luciano44/LChat"
+            githubLink="https://github.com/luciano44/drawing-app"
           />
           <Project
             projectLink="https://luciano44.github.io/userlist/"
             logo={users}
             title="Listagem de Usuários"
             about="Chat com cadastro e perfil de usuários"
-            githubLink="https://github.com/luciano44/LChat"
+            githubLink="https://github.com/luciano44/userlist"
           />
           <Project
             projectLink="https://old-react-portfolio.netlify.app"
             logo={oldlr}
             title="Portfólio Antigo"
             about="Chat com cadastro e perfil de usuários"
-            githubLink="https://github.com/luciano44/LChat"
+            githubLink="https://github.com/luciano44/React-Portfolio-build"
           />
           <Project
             projectLink="https://luciano44.github.io/to-do-list/"
             logo={todo}
             title="Lista de Afazeres"
             about="Visualize, adiciona e remova afazeres."
-            githubLink="https://github.com/luciano44/LChat"
+            githubLink="https://github.com/luciano44/to-do-list"
           />
         </ul>
       </div>
