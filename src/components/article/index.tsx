@@ -69,7 +69,7 @@ function Article() {
             githubLink="https://github.com/luciano44/LChat"
           />
           <Project
-            projectLink="https://luciano44.github.io"
+            projectLink="https://old-react-portfolio.netlify.app"
             logo={oldlr}
             title="Portfólio Antigo"
             about="Chat com cadastro e perfil de usuários"
@@ -83,12 +83,6 @@ function Article() {
             githubLink="https://github.com/luciano44/LChat"
           />
         </ul>
-        <div className="curriculum">
-          <ImProfile /> <span>Curriculum</span>{" "}
-          <a href="#download">
-            <FaDownload />
-          </a>
-        </div>
       </div>
       <div className="knowledges">
         <p className="description">CONHECIMENTOS</p>
@@ -134,6 +128,12 @@ function Article() {
             <span>Figma</span>
           </li>
         </ul>
+        <div className="curriculum">
+          <ImProfile /> <span>Curriculum</span>{" "}
+          <a href="#download">
+            <FaDownload />
+          </a>
+        </div>
       </div>
     </article>
   );

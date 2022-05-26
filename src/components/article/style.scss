@@ -55,12 +55,12 @@ article {
   }
 
   .curriculum {
-    margin-top: 100px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.08);
-    width: 200px;
+    width: 100%;
     height: 50px;
     position: relative;
 
@@ -74,6 +74,20 @@ article {
 
     a:hover svg {
       filter: opacity(1);
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  article {
+    flex-direction: column;
+
+    .projects,
+    .knowledges {
+      margin: 0 0 100px 0;
+    }
+    .curriculum {
+      display: none;
     }
   }
 }

@@ -9,7 +9,6 @@ header {
   .logo {
     margin: 0 auto;
     width: fit-content;
-    transition: 0.1s;
 
     &:hover {
       filter: drop-shadow(0 0 15px hsla(194, 100%, 50%, 0.5));
