@@ -50,3 +50,14 @@ section {
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  section {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      color: hsla(0, 0%, 100%, 0.3);
+    }
+  }
+}

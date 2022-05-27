@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./style.scss";
 import logo from "./../../img/logo.svg";
 import git from "./../../img/git.svg";
@@ -6,15 +6,28 @@ import linkedin from "./../../img/linkedin.svg";
 import twitter from "./../../img/twitter.svg";
 
 function Header() {
+  const blueLineRef = useRef<HTMLDivElement>(null);
+  const logoRef = useRef<HTMLDivElement>(null);
+  const ulMediasRef = useRef<HTMLUListElement>(null);
+
+  // the CSS rules of each element below written in the .scss file describes their first animation state
+
+  // Start animation
+  useEffect(() => {
+    blueLineRef.current!.style.width = "100%";
+    logoRef.current!.style.animation = "appear 1s 2s forwards";
+    ulMediasRef.current!.style.animation = "jump 1s 1s forwards";
+  }, []);
+
   return (
     <header>
-      <div className="logo">
+      <div ref={logoRef} className="logo">
         <a href="/">
           <img src={logo} alt="logo" />
         </a>
       </div>
       <div className="social-medias">
-        <ul>
+        <ul ref={ulMediasRef}>
           <li>
             <a
               href="https://github.com/luciano44"
@@ -43,7 +56,7 @@ function Header() {
             </a>
           </li>
         </ul>
-        <div className="blue-line"></div>
+        <div ref={blueLineRef} className="blue-line"></div>
       </div>
     </header>
   );

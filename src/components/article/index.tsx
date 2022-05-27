@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.scss";
 import Project from "../project";
 
@@ -28,60 +28,83 @@ import pencil from "../../img/pencil.svg";
 import todo from "../../img/todo.svg";
 
 function Article() {
+  type Project = {
+    projectLink: string;
+    logo: string;
+    title: string;
+    about: string;
+    githubLink: string;
+  };
+
+  const [projects, setProjects] = useState<Project[]>([
+    {
+      projectLink: "https://luchat.netlify.app",
+      logo: lchat,
+      title: "LCHAT",
+      about:
+        "Aplicativo de chat em tempo real com cadastro, login, perfil e listagem de usuários cadastrados.",
+      githubLink: "https://github.com/luciano44/LChat",
+    },
+    {
+      projectLink: "https://luciano44.github.io/to-do-list/",
+      logo: todo,
+      title: "To-Do App",
+      about: "To-Do App com lista de tarefas a fazer e tarefas já concluidas.",
+      githubLink: "https://github.com/luciano44/to-do-list",
+    },
+    {
+      projectLink: "https://luciano44.github.io/userlist/",
+      logo: users,
+      title: "Listagem de Usuários",
+      about: "Lista usuários de uma API pública.",
+      githubLink: "https://github.com/luciano44/userlist",
+    },
+    {
+      projectLink: "https://luciano44.github.io/Analog-Clock/",
+      logo: clock,
+      title: "Relógio Analógico",
+      about: "Relógio Analógico feito com Vanilla JS",
+      githubLink: "https://github.com/luciano44/Analog-Clock",
+    },
+    {
+      projectLink: "https://luciano44.github.io/PET-photos/",
+      logo: paw,
+      title: "Imagens de Animais",
+      about: "Gerador de imagens aleatória de animais.",
+      githubLink: "https://github.com/luciano44/PET-photos",
+    },
+    {
+      projectLink: "https://old-react-portfolio.netlify.app",
+      logo: oldlr,
+      title: "Portfólio Antigo",
+      about: "Portfólio Anterior a este.",
+      githubLink: "https://github.com/luciano44/React-Portfolio-build",
+    },
+    {
+      projectLink: "https://luciano44.github.io/drawing-app/",
+      logo: pencil,
+      title: "App de Desenho",
+      about:
+        "App de Desenho com opções de cores, tamanho do pincel, refazer ultimo risco e limpar o quadro.",
+      githubLink: "https://github.com/luciano44/drawing-app",
+    },
+  ]);
+
   return (
     <article>
       <div className="projects">
         <p className="description">PROJETOS</p>
         <ul>
-          <Project
-            projectLink="https://luchat.netlify.app"
-            logo={lchat}
-            title="LCHAT"
-            about="Chat com cadastro e perfil de usuários projeto com o nome mais comprido do que o normal jeto com o nome mais comprido do que o normal jeto com o nome mais comprido do que o normal "
-            githubLink="https://github.com/luciano44/LChat"
-          />
-          <Project
-            projectLink="https://luciano44.github.io/Analog-Clock/"
-            logo={clock}
-            title="Relógio Analógico"
-            about="Chat com cadastro e perfil de usuários"
-            githubLink="https://github.com/luciano44/Analog-Clock"
-          />
-          <Project
-            projectLink="https://luciano44.github.io/PET-photos/"
-            logo={paw}
-            title="Imagens de Animais"
-            about="Chat com cadastro e perfil de usuários lorem ipsum dolor siamet and i don't remember what's written in the rest of the lorem text"
-            githubLink="https://github.com/luciano44/PET-photos"
-          />
-          <Project
-            projectLink="https://luciano44.github.io/drawing-app/"
-            logo={pencil}
-            title="App de Desenho"
-            about="Chat com cadastro e perfil de usuários"
-            githubLink="https://github.com/luciano44/drawing-app"
-          />
-          <Project
-            projectLink="https://luciano44.github.io/userlist/"
-            logo={users}
-            title="Listagem de Usuários"
-            about="Chat com cadastro e perfil de usuários"
-            githubLink="https://github.com/luciano44/userlist"
-          />
-          <Project
-            projectLink="https://old-react-portfolio.netlify.app"
-            logo={oldlr}
-            title="Portfólio Antigo"
-            about="Chat com cadastro e perfil de usuários"
-            githubLink="https://github.com/luciano44/React-Portfolio-build"
-          />
-          <Project
-            projectLink="https://luciano44.github.io/to-do-list/"
-            logo={todo}
-            title="Lista de Afazeres"
-            about="Visualize, adiciona e remova afazeres."
-            githubLink="https://github.com/luciano44/to-do-list"
-          />
+          {projects.map((p, i) => (
+            <Project
+              key={i}
+              projectLink={p.projectLink}
+              logo={p.logo}
+              title={p.title}
+              about={p.about}
+              githubLink={p.githubLink}
+            />
+          ))}
         </ul>
       </div>
       <div className="knowledges">
@@ -128,8 +151,8 @@ function Article() {
             <span>Figma</span>
           </li>
         </ul>
-        <div className="curriculum">
-          <ImProfile /> <span>Curriculum</span>{" "}
+        <div className="curriculum" title="Baixar Curriculum">
+          <ImProfile /> <span>Curriculum</span>
           <a href="#download">
             <FaDownload />
           </a>

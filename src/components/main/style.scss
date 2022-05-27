@@ -5,10 +5,15 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #030727;
+html {
   overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  background: #030727;
   color: #f1f1f1;
+  overflow-x: hidden;
 }
 
 li {
@@ -27,8 +32,6 @@ a {
 }
 
 .lights {
-  // height: 100vh;
-  // width: 100vw;
   margin: 0 auto;
   left: 50%;
   right: 50%;
