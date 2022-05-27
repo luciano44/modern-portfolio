@@ -36,7 +36,7 @@ function Article() {
     githubLink: string;
   };
 
-  const [projects, setProjects] = useState<Project[]>([
+  const [projects] = useState<Project[]>([
     {
       projectLink: "https://luchat.netlify.app",
       logo: lchat,
