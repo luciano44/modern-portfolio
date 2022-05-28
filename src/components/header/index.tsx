@@ -14,9 +14,13 @@ function Header() {
 
   // Start animation
   useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 250);
+
     blueLineRef.current!.style.width = "100%";
-    logoRef.current!.style.animation = "appear 1s 2s forwards";
-    ulMediasRef.current!.style.animation = "jump 1s 1s forwards";
+    logoRef.current!.style.animation = "appear 1s 1s forwards";
+    ulMediasRef.current!.style.animation = "jump 1s .5s forwards";
   }, []);
 
   return (

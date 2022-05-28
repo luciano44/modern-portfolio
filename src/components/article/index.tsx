@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./style.scss";
 import Project from "../project";
 
@@ -90,8 +90,14 @@ function Article() {
     },
   ]);
 
+  const articleRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    articleRef.current!.style.animation = "fade 1s 1.5s forwards";
+  }, []);
+
   return (
-    <article>
+    <article ref={articleRef}>
       <div className="projects">
         <p className="description">PROJETOS</p>
         <ul>
@@ -151,12 +157,15 @@ function Article() {
             <span>Figma</span>
           </li>
         </ul>
-        <div className="curriculum" title="Baixar Curriculum">
+        <a
+          href="/Profile.pdf"
+          download={true}
+          className="curriculum"
+          title="Baixar Curriculum"
+        >
           <ImProfile /> <span>Curriculum</span>
-          <a href="#download">
-            <FaDownload />
-          </a>
-        </div>
+          <FaDownload />
+        </a>
       </div>
     </article>
   );

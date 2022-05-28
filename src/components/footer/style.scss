@@ -1,0 +1,25 @@
+footer {
+  margin-top: 100px;
+  width: 100%;
+  background: hsla(0, 0%, 0%, 0.5);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+
+  p {
+    color: hsla(0, 0%, 95%, 0.4);
+  }
+
+  a {
+    filter: opacity(1);
+
+    color: #00c2ff;
+    margin-left: 5px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

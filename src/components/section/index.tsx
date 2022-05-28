@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./style.scss";
 import profile from "../../img/icons/profile.png";
 
 function Section() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    sectionRef.current!.style.animation = "fade 1s 1.25s forwards";
+  }, []);
+
   return (
-    <section>
+    <section ref={sectionRef}>
       <div className="profile">
         <img src={profile} alt="Avatar" />
         <div className="name">

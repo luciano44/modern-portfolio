@@ -12,18 +12,23 @@ type Props = {
 
 const Project = ({ logo, title, about, projectLink, githubLink }: Props) => {
   return (
-    <a href={projectLink} target="_blank" rel="noreferrer">
-      <li className="project">
+    <li className="projectWrapper">
+      <a
+        href={projectLink}
+        target="_blank"
+        rel="noreferrer"
+        className="project"
+      >
         <img src={logo} alt={title} className="logo" />
         <div className="info">
           <div className="title">{title}</div>
           <div className="about">{about}</div>
         </div>
-        <a href={githubLink} target="_blank" rel="noreferrer" className="git">
-          <img src={github} alt="Github" />
-        </a>
-      </li>
-    </a>
+      </a>
+      <a href={githubLink} target="_blank" rel="noreferrer" className="git">
+        <img src={github} alt="Github" />
+      </a>
+    </li>
   );
 };
 

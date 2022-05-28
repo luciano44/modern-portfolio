@@ -1,8 +1,10 @@
 section {
   min-height: 234px;
   width: 100%;
-  // border: 1px dotted red;
   margin: 100px 0;
+  position: relative;
+  top: -100px;
+  filter: opacity(0);
 
   .profile {
     height: 66px;
@@ -17,9 +19,7 @@ section {
       min-width: fit-content;
       border-radius: 50%;
       margin-right: 20px;
-      border: 2px solid #00c2ff;
-      box-shadow: 0 0 15px hsla(194, 100%, 50%, 0.5),
-        inset 0 0 15px hsla(194, 100%, 50%, 0.5);
+      box-shadow: 0 0 15px hsla(194, 100%, 50%, 1);
     }
 
     .name {
@@ -51,6 +51,13 @@ section {
     color: hsla(0, 0%, 100%, 0.6);
     font-weight: lighter;
     text-align: center;
+  }
+}
+
+@keyframes fade {
+  to {
+    filter: opacity(1);
+    top: 0;
   }
 }
 
