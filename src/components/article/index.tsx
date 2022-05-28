@@ -17,6 +17,7 @@ import mongodb from "../../img/icons/mongodb.png";
 import express from "../../img/icons/express.png";
 import figma from "../../img/icons/figma.png";
 import sass from "../../img/icons/sass.png";
+import mongoose from "../../img/icons/mongoose.png";
 
 // project logos
 import lchat from "../../img/lchat.svg";
@@ -147,6 +148,10 @@ function Article() {
           <li>
             <img src={mongodb} alt="MongoDB" />
             <span>MongoDB</span>
+          </li>
+          <li>
+            <img src={mongoose} alt="Mongoose" />
+            <span>Mongoose</span>
           </li>
           <li>
             <img src={express} alt="Express" />
