@@ -27,6 +27,7 @@ import oldlr from "../../img/oldlr.svg";
 import paw from "../../img/paw.svg";
 import pencil from "../../img/pencil.svg";
 import todo from "../../img/todo.svg";
+import smile from "../../img/smile.svg";
 
 function Article() {
   type Project = {
@@ -80,6 +81,15 @@ function Article() {
       title: "Portfólio Antigo",
       about: "Portfólio Anterior a este.",
       githubLink: "https://github.com/luciano44/React-Portfolio-build",
+    },
+    {
+      projectLink:
+        "https://play.google.com/store/apps/details?id=com.randomtxtgen.geradornomes",
+      logo: smile,
+      title: "Random Text Generator",
+      about:
+        "App Android que gera uma palavra de letras geradas aleatoriamente.",
+      githubLink: "/",
     },
     {
       projectLink: "https://luciano44.github.io/drawing-app/",
