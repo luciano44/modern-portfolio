@@ -23,15 +23,14 @@ section {
     }
 
     .name {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: rgba(255, 255, 255, 0.75);
+      font-size: 19px;
+      color: hsl(194, 100%, 95%, 0.75);
     }
 
     .blue-line {
-      background: #7de1ff;
+      background: hsl(194, 100%, 75%);
       box-shadow: 0 0 15px 1px #00c2ff;
-      height: 2px;
+      height: 1px;
     }
   }
 
@@ -39,7 +38,7 @@ section {
     margin: 20px 0;
     text-align: center;
     font-size: 40px;
-    font-style: italic;
+    // font-style: italic;
     color: hsla(0, 0%, 100%, 0.9);
     span {
       color: #00c2ff;
@@ -48,7 +47,7 @@ section {
   }
 
   p {
-    color: hsla(0, 0%, 100%, 0.6);
+    color: hsl(194, 100%, 95%, 0.5);
     font-weight: lighter;
     text-align: center;
   }
