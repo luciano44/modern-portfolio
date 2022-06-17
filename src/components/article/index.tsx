@@ -7,6 +7,7 @@ import { FaDownload } from "react-icons/fa";
 import { ImProfile } from "react-icons/im";
 
 // technology icons
+import next from "../../img/icons/next.png";
 import js from "../../img/icons/js.png";
 import html from "../../img/icons/html.png";
 import css from "../../img/icons/css.png";
@@ -143,6 +144,7 @@ function Article() {
             <img src={react} alt="React" />
             <span>React</span>
           </li>
+
           <li>
             <img src={git} alt="Git" />
             <span>Git</span>
@@ -150,6 +152,10 @@ function Article() {
           <li>
             <img src={node} alt="Node" />
             <span>Node</span>
+          </li>
+          <li>
+            <img src={next} alt="Next.JS" />
+            <span>Next</span>
           </li>
           <li>
             <img src={sass} alt="Sass" />
