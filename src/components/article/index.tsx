@@ -22,6 +22,7 @@ import mongoose from "../../img/icons/mongoose.png";
 
 // project logos
 import lchat from "../../img/lchat.svg";
+import pagination from "../../img/pagination.svg";
 import users from "../../img/users.svg";
 import clock from "../../img/clock.svg";
 import oldlr from "../../img/oldlr.svg";
@@ -47,6 +48,13 @@ function Article() {
       about:
         "Aplicativo de chat em tempo real com cadastro, login, perfil e listagem de usuários cadastrados.",
       githubLink: "https://github.com/luciano44/LChat",
+    },
+    {
+      projectLink: "https://luciano44.github.io/pagination/",
+      logo: pagination,
+      title: "Paginação",
+      about: "Base de um app com paginação customizável.",
+      githubLink: "https://github.com/luciano44/pagination",
     },
     {
       projectLink: "https://luciano44.github.io/to-do-list/",
