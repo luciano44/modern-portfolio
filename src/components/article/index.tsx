@@ -21,13 +21,15 @@ import sass from "../../img/icons/sass.png";
 import mongoose from "../../img/icons/mongoose.png";
 
 // project logos
+import nextlevel44 from "../../img/nextlevel44.svg";
+import lorem44 from "../../img/lorem44.svg";
+import todolistapp from "../../img/todolistapp.svg";
 import lchat from "../../img/lchat.svg";
 import pagination from "../../img/pagination.svg";
 import users from "../../img/users.svg";
 import clock from "../../img/clock.svg";
 import oldlr from "../../img/oldlr.svg";
 import paw from "../../img/paw.svg";
-import pencil from "../../img/pencil.svg";
 import todo from "../../img/todo.svg";
 import smile from "../../img/smile.svg";
 
@@ -42,53 +44,74 @@ function Article() {
 
   const [projects] = useState<Project[]>([
     {
+      projectLink: "http://nextlevel44.vercel.app/",
+      logo: nextlevel44,
+      title: "NextLevel44",
+      about: "Empresa De Automação Residencial.",
+      githubLink: "https://github.com/luciano44/nextlevel44",
+    },
+    {
+      projectLink: "https://luciano44.github.io/lorem44/",
+      logo: lorem44,
+      title: "Lorem44",
+      about: `Gere Paragrafos "Lorem Ipsum"`,
+      githubLink: "https://github.com/luciano44/lorem44",
+    },
+    {
+      projectLink: "https://github.com/luciano44/todolist-app",
+      logo: todolistapp,
+      title: "To-Do List",
+      about: "App Android Para Criação De Tarefas",
+      githubLink: "https://github.com/luciano44/todolist-app",
+    },
+    {
       projectLink: "https://luchat.netlify.app",
       logo: lchat,
       title: "LCHAT",
       about:
-        "Aplicativo de chat em tempo real com cadastro, login, perfil e listagem de usuários cadastrados.",
+        "Aplicativo De Chat Em Tempo Real Com Cadastro, Login, Perfil E Listagem De Usuários Cadastrados.",
       githubLink: "https://github.com/luciano44/LChat",
     },
     {
       projectLink: "https://luciano44.github.io/pagination/",
       logo: pagination,
       title: "Paginação",
-      about: "Base de um app com paginação customizável.",
+      about: "Base De Um App Com Paginação Customizável.",
       githubLink: "https://github.com/luciano44/pagination",
     },
     {
       projectLink: "https://luciano44.github.io/to-do-list/",
       logo: todo,
       title: "To-Do App",
-      about: "To-Do App com lista de tarefas a fazer e tarefas já concluidas.",
+      about: "To-Do App Com Lista De Tarefas A Fazer E Tarefas Já Concluidas.",
       githubLink: "https://github.com/luciano44/to-do-list",
     },
     {
       projectLink: "https://luciano44.github.io/userlist/",
       logo: users,
       title: "Listagem de Usuários",
-      about: "Lista usuários de uma API pública.",
+      about: "Lista Usuários De Uma API Pública.",
       githubLink: "https://github.com/luciano44/userlist",
     },
     {
       projectLink: "https://luciano44.github.io/Analog-Clock/",
       logo: clock,
       title: "Relógio Analógico",
-      about: "Relógio Analógico feito com Vanilla JS",
+      about: "Relógio Analógico Feito Com Vanilla Js",
       githubLink: "https://github.com/luciano44/Analog-Clock",
     },
     {
       projectLink: "https://luciano44.github.io/PET-photos/",
       logo: paw,
       title: "Imagens de Animais",
-      about: "Gerador de imagens aleatória de animais.",
+      about: "Gerador De Imagens Aleatória De Animais.",
       githubLink: "https://github.com/luciano44/PET-photos",
     },
     {
       projectLink: "https://old-react-portfolio.netlify.app",
       logo: oldlr,
       title: "Portfólio Antigo",
-      about: "Portfólio Anterior a este.",
+      about: "Portfólio Anterior.",
       githubLink: "https://github.com/luciano44/React-Portfolio-build",
     },
     {
@@ -97,16 +120,8 @@ function Article() {
       logo: smile,
       title: "Random Text Generator",
       about:
-        "App Android que gera uma palavra de letras geradas aleatoriamente.",
+        "App Android Que Gera Uma Palavra De Letras Geradas Aleatoriamente.",
       githubLink: "/",
-    },
-    {
-      projectLink: "https://luciano44.github.io/drawing-app/",
-      logo: pencil,
-      title: "App de Desenho",
-      about:
-        "App de Desenho com opções de cores, tamanho do pincel, refazer ultimo risco e limpar o quadro.",
-      githubLink: "https://github.com/luciano44/drawing-app",
     },
   ]);
 

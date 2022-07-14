@@ -64,7 +64,9 @@
   align-items: center;
 
   .logo {
-    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
     margin-right: 20px;
   }
 

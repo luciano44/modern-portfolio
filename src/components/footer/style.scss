@@ -1,8 +1,11 @@
 footer {
   margin-top: 100px;
   width: 100%;
-  background: #000;
-  height: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid #00c2ff;
+  box-shadow: 0 5px 15px 1px #00c2ff;
+
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
