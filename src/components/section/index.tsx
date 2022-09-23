@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./style.scss";
-import profile from "../../img/icons/profile.png";
+import profile from "../../img/icons/profile1.png";
 
 function Section() {
   const sectionRef = useRef<HTMLDivElement>(null);
