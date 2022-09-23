@@ -44,27 +44,6 @@ function Article() {
 
   const [projects] = useState<Project[]>([
     {
-      projectLink: "http://nextlevel44.vercel.app/",
-      logo: nextlevel44,
-      title: "NextLevel44",
-      about: "Empresa De Automação Residencial.",
-      githubLink: "https://github.com/luciano44/nextlevel44",
-    },
-    {
-      projectLink: "https://luciano44.github.io/lorem44/",
-      logo: lorem44,
-      title: "Lorem44",
-      about: `Gere Paragrafos "Lorem Ipsum"`,
-      githubLink: "https://github.com/luciano44/lorem44",
-    },
-    {
-      projectLink: "https://github.com/luciano44/todolist-app",
-      logo: todolistapp,
-      title: "To-Do List",
-      about: "App Android Para Criação De Tarefas",
-      githubLink: "https://github.com/luciano44/todolist-app",
-    },
-    {
       projectLink: "https://luchat.netlify.app",
       logo: lchat,
       title: "LCHAT",
@@ -79,6 +58,21 @@ function Article() {
       about: "Base De Um App Com Paginação Customizável.",
       githubLink: "https://github.com/luciano44/pagination",
     },
+
+    {
+      projectLink: "https://github.com/luciano44/todolist-app",
+      logo: todolistapp,
+      title: "To-Do List",
+      about: "App Android Para Criação De Tarefas",
+      githubLink: "https://github.com/luciano44/todolist-app",
+    },
+    {
+      projectLink: "https://luciano44.github.io/lorem44/",
+      logo: lorem44,
+      title: "Lorem44",
+      about: `Gere Paragrafos "Lorem Ipsum"`,
+      githubLink: "https://github.com/luciano44/lorem44",
+    },
     {
       projectLink: "https://luciano44.github.io/to-do-list/",
       logo: todo,
@@ -86,6 +80,14 @@ function Article() {
       about: "To-Do App Com Lista De Tarefas A Fazer E Tarefas Já Concluidas.",
       githubLink: "https://github.com/luciano44/to-do-list",
     },
+    {
+      projectLink: "http://nextlevel44.vercel.app/",
+      logo: nextlevel44,
+      title: "NextLevel44",
+      about: "Empresa De Automação Residencial.",
+      githubLink: "https://github.com/luciano44/nextlevel44",
+    },
+
     {
       projectLink: "https://luciano44.github.io/userlist/",
       logo: users,
@@ -149,7 +151,7 @@ function Article() {
         </ul>
       </div>
       <div className="knowledges">
-        <p className="description">CONHECIMENTOS</p>
+        <p className="description">TECNOLOGIAS</p>
         <ul>
           <li>
             <img src={js} alt="JavaScript" />
